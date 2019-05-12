@@ -4,8 +4,9 @@ using namespace std;
 void search(char* pat, char* txt) {
 	int M = strlen(pat);
 	int N = strlen(txt);
+  int j;
 	for (int i = 0; i <= N - M; i++) {
-		for (int j = 0; j < M; j++)
+		for (j = 0; j < M; j++)
 			if (txt[i + j] != pat[j])
 				break;
 		if (j == M)
